@@ -33,6 +33,12 @@ class LinkedList {
         this.length++
     }
 
+    // Removes head value
+    removeHead(){
+        this.head = this.head.next
+        this.length--
+    }
+
     print(){
         let output = ''
         let current = this.head
